@@ -1,7 +1,14 @@
-<h1>Hola mundo</h1>
-<h2>Home page</h2>
-<ul>
-    <li><a href="/cv">CV</a></li>
-    <li><a href="/portfolio">Portafolio</a></li>
-    <li><a href="/contact">Contacto</a></li>
-</ul>
+{% extends 'main/base.html' %}
+
+{% block background %}{% load static %}{% static 'main/img/home-bg.jpg' %}{% endblock background %}
+
+{% block header %}
+<h1>Oscar Dominguez</h1>
+<span class="subheading">Python Dev</span>
+{% endblock header %}
+
+{% block content %}
+<p>
+Estas en casa
+</p>
+{% endblock content %}

@@ -1,1 +1,7 @@
-<h1>Curriculum Vitae</h1>
+{% extends 'main/base.html' %}
+
+{% block background %}{% load static %}{% static 'main/img/about-bg.jpg' %}{% endblock background %}
+
+{% block header %}
+<h1>CV</h1>
+{% endblock header %}
